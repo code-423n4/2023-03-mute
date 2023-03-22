@@ -12,21 +12,6 @@ Some of the checklists in this doc are for **C4 (🐺)** and some of them are fo
 
 ---
 
-# Contest setup
-
-## 🐺 C4: Set up repos
-- [ ] Create a new private repo named `YYYY-MM-sponsorname` using this repo as a template.
-- [ ] Rename this repo to reflect contest date (if applicable)
-- [ ] Rename contest H1 below
-- [ ] Update pot sizes
-- [ ] Fill in start and end times in contest bullets below
-- [ ] Add link to submission form in contest details below
-- [ ] Add the information from the scoping form to the "Scoping Details" section at the bottom of this readme.
-- [ ] Add matching info to the [code423n4.com public contest data here](https://github.com/code-423n4/code423n4.com/blob/main/_data/contests/contests.csv))
-- [ ] Add sponsor to this private repo with 'maintain' level access.
-- [ ] Send the sponsor contact the url for this repo to follow the instructions below and add contracts here. 
-- [ ] Delete this checklist.
-
 # Repo setup
 
 ## ⭐️ Sponsor: Add code to this repo
@@ -109,26 +94,27 @@ Automated findings output for the contest can be found [here](add link to report
 
 ## Scoping Details 
 ```
-- If you have a public code repo, please share it here:  
-- How many contracts are in scope?:   
-- Total SLoC for these contracts?:  
-- How many external imports are there?:  
-- How many separate interfaces and struct definitions are there for the contracts within scope?:  
-- Does most of your code generally use composition or inheritance?:   
-- How many external calls?:   
-- What is the overall line coverage percentage provided by your tests?:  
-- Is there a need to understand a separate part of the codebase / get context in order to audit this part of the protocol?:   
-- Please describe required context:   
-- Does it use an oracle?:  
-- Does the token conform to the ERC20 standard?:  
-- Are there any novel or unique curve logic or mathematical models?: 
-- Does it use a timelock function?:  
-- Is it an NFT?: 
-- Does it have an AMM?:   
-- Is it a fork of a popular project?:   
-- Does it use rollups?:   
-- Is it multi-chain?:  
-- Does it use a side-chain?: 
+- If you have a public code repo, please share it here:  N/A
+- How many contracts are in scope?:   6
+- Total SLoC for these contracts?:  1133
+- How many external imports are there?: 4 
+- How many separate interfaces and struct definitions are there for the contracts within scope?:  5
+- Does most of your code generally use composition or inheritance?:   Composition
+- How many external calls?:   0
+- What is the overall line coverage percentage provided by your tests?:  75
+- Is there a need to understand a separate part of the codebase / get context in order to audit this part of the protocol?:  false 
+- Please describe required context:   n/a
+- Does it use an oracle?:  no
+- Does the token conform to the ERC20 standard?:  No
+- Are there any novel or unique curve logic or mathematical models?: x*y for normal pools, x3y+y3x for stable pools
+- Does it use a timelock function?:  Yes
+- Is it an NFT?: No
+- Does it have an AMM?:   Yes
+- Is it a fork of a popular project?:   Yes; We use the Velodrome Stable Curve which is a fork of uniV2 with modifications. We have applied LP governance & a dynamic fee model.
+- Does it use rollups?:   No
+- Is it multi-chain?:  No
+- Does it use a side-chain?: Yes; EVM-compatible side-chain
+- Specific areas to be addressed: We want to find any exploits that result in loss of funds for our bond contract and amplifier contract. We are not concerned heavily with our AMM as it uses battle tested code, however is in the scope still as our bond / amplifier contracts utilize it.
 ```
 
 # Tests
