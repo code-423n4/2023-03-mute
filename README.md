@@ -46,19 +46,18 @@ Under "SPONSORS ADD INFO HERE" heading below, include the following:
 
 ---
 
-# Sponsorname contest details
-- Total Prize Pool: Sum of below awards
-  - HM awards: XXX XXX (Notion Field: Main Pool)
-  - QA report awards: XXX XXX (Notion Field: QA Pool, usually 10% of total award pool)
-  - Gas report awards: XXX XXX (Notion Field: Gas Pool, usually 5% of total award pool)
-  - Judge + presort awards: XXX XXX (Notion Field: Judge Fee)
-  - Scout awards: $500 USDC (this field doesn't exist in Notion yet, usually $500 USDC)
-  - (this line can be removed if there is no mitigation) Mitigation review contest: XXX XXX (*Opportunity goes to top X certified wardens based on placement in this contest.*)
+# Mute.io contest details
+- Total Prize Pool: $24,000 USDC
+  - HM awards: $15,725 USDC
+  - QA report awards: $1,850 USDC
+  - Gas report awards: $925 USDC
+  - Judge + presort awards: $5,000 USDC
+  - Scout awards: $500 USDC
 - Join [C4 Discord](https://discord.gg/code4rena) to register
-- Submit findings [using the C4 form](https://code4rena.com/contests/YYYY-MM-sponsorName-contest/submit)
+- Submit findings [using the C4 form](https://code4rena.com/contests/2023-03-mute-contest/submit)
 - [Read our guidelines for more details](https://docs.code4rena.com/roles/wardens)
-- Starts TBD XXX XXX XX 20:00 UTC
-- Ends TBD XXX XXX XX 20:00 UTC
+- Starts March 28, 2023 20:00 UTC
+- Ends April 03, 2023 20:00 UTC
 
 ## Automated Findings / Publicly Known Issues
 
