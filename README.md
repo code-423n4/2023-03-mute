@@ -44,8 +44,8 @@ The [Mute Docs](https://wiki.mute.io) has detailed information on the platform, 
 
 # Additional Context
 
-[dMute Vote Weight Calculations](https://wiki.mute.io/mute/mute-dao/introduction)
-[Amplifier Pool Boosted APY Calculation](https://wiki.mute.io/mute/mute-switch/amplifier)
+- [dMute Vote Weight Calculations](https://wiki.mute.io/mute/mute-dao/introduction)
+- [Amplifier Pool Boosted APY Calculation](https://wiki.mute.io/mute/mute-switch/amplifier)
 
 ## Scoping Details 
 ```
