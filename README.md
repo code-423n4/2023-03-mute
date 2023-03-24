@@ -23,24 +23,26 @@ Mute is a native DeFi platform built on zkSync. The platform includes an AMM w/ 
 
 The primary focus of this audit is to identify any areas of concern within the bond & amplifier contracts - specifically for loss of funds.
 
-The [Mute Docs](https://wiki.mute.io) has detailed information on the platform, how the systems are integrated, and specific calulations made inside certain contracts. 
+The [Mute Docs](https://wiki.mute.io) has detailed information on the platform, how the systems are integrated, and specific calculations made inside certain contracts. 
 
 # Scope
 
 
 | Contract | SLOC | Purpose |  
 | ----------- | ----------- | ----------- |
-| [contracts/amplifier/MuteAmplifier.sol](contracts/amplifier/MuteAmplifier.sol) | 305 | This contract drips Mute tokens as reward for depositing LP tokens over the course of startTime and endTime. The ratio of rewards is depends on a users weight and their dMute holding balance in relation to the overall contract rewards. The higher their dMute underlying holdings are, the more Mute tokens they receive. |
-| [contracts/bonds/MuteBond.sol](contracts/bonds/MuteBond.sol) | 146 | This contract allows users to bond their LP tokens in return for native Mute tokens. The contract continuously creates new bond epochs as long as it is funded with Mute tokens. Mute payout are received in dMute and timelocked for 7 days |
-| [contracts/dao/dMute.sol](contracts/dao/dMute.sol) | 84 | This contract allows users to lock up their mute tokens to receive a soul-bound ERC20 dMute token. This is used as a governance token for Mute. Locking up mute for dMute requires a min 7 day vest with max 365 day period. Users can redeem their mute after the timelock is expired.  |
+| [contracts/amplifier/MuteAmplifier.sol](https://github.com/code-423n4/2023-03-mute/blob/main/contracts/amplifier/MuteAmplifier.sol) | 305 | This contract drips Mute tokens as reward for depositing LP tokens over the course of startTime and endTime. The ratio of rewards is depends on a users weight and their dMute holding balance in relation to the overall contract rewards. The higher their dMute underlying holdings are, the more Mute tokens they receive. |
+| [contracts/bonds/MuteBond.sol](https://github.com/code-423n4/2023-03-mute/blob/main/contracts/bonds/MuteBond.sol) | 146 | This contract allows users to bond their LP tokens in return for native Mute tokens. The contract continuously creates new bond epochs as long as it is funded with Mute tokens. Mute payout are received in dMute and timelocked for 7 days |
+| [contracts/dao/dMute.sol](https://github.com/code-423n4/2023-03-mute/blob/main/contracts/dao/dMute.sol) | 84 | This contract allows users to lock up their mute tokens to receive a soul-bound ERC20 dMute token. This is used as a governance token for Mute. Locking up mute for dMute requires a min 7 day vest with max 365 day period. Users can redeem their mute after the timelock is expired.  |
 ## Out of scope
 
 | Contracts |  
 | ----------- |
-| [contracts/interfaces/*](contracts/interfaces)|
-| [contracts/libraries/*](contracts/libraries)|
-| [contracts/dynamic/*](contracts/dynamic)|
-| [contracts/test/*](contracts/test)|
+| [contracts/interfaces/*](https://github.com/code-423n4/2023-03-mute/blob/main/contracts/interfaces)|
+| [contracts/libraries/*](https://github.com/code-423n4/2023-03-mute/blob/main/contracts/libraries)|
+| [contracts/dynamic/*](https://github.com/code-423n4/2023-03-mute/blob/main/contracts/dynamic)|
+| [contracts/test/*](https://github.com/code-423n4/2023-03-mute/blob/main/contracts/test)|
+| [contracts/bonds/BondTreasury.sol](https://github.com/code-423n4/2023-03-mute/blob/main/contracts/bonds/BondTreasury.sol)|
+| [contracts/dao/dSoulBound.sol](https://github.com/code-423n4/2023-03-mute/blob/main/contracts/dao/dSoulBound.sol)|
 
 # Additional Context
 

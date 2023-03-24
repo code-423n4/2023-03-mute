@@ -1,0 +1,3 @@
+{
+    "filter_paths": "(contracts/interfaces/|contracts/libraries/|contracts/dynamic/|contracts/test/|node_modules/|contracts/bonds/BondTreasury.sol|contracts/dao/dSoulBound.sol)"
+}

@@ -1,3 +1,4 @@
+require("hardhat-gas-reporter");
 require("@nomicfoundation/hardhat-chai-matchers");
 
 var export_m = {}
@@ -15,6 +16,9 @@ if(process.env.NODE_ENV == "test"){
         allowUnlimitedContractSize: true
       },
     },
+    gasReporter: {
+      enabled: true
+    }
   };
 
 } else {
