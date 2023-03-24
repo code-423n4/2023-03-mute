@@ -30,14 +30,14 @@ The [Mute Docs](https://wiki.mute.io) has detailed information on the platform, 
 
 
 | Contract | SLOC | Purpose |  
-| ----------- | ----------- | ----------- | ----------- |
+| ----------- | ----------- | ----------- |
 | [contracts/amplifier/MuteAmplifier.sol](contracts/amplifier/MuteAmplifier.sol) | 305 | This contract drips Mute tokens as reward for depositing LP tokens over the course of startTime and endTime. The ratio of rewards is depends on a users weight and their dMute holding balance in relation to the overall contract rewards. The higher their dMute underlying holdings are, the more Mute tokens they receive. |
 | [contracts/bonds/MuteBond.sol](contracts/bonds/MuteBond.sol) | 146 | This contract allows users to bond their LP tokens in return for native Mute tokens. The contract continuously creates new bond epochs as long as it is funded with Mute tokens. Mute payout are received in dMute and timelocked for 7 days |
 | [contracts/dao/dMute.sol](contracts/dao/dMute.sol) | 84 | This contract allows users to lock up their mute tokens to receive a soul-bound ERC20 dMute token. This is used as a governance token for Mute. Locking up mute for dMute requires a min 7 day vest with max 365 day period. Users can redeem their mute after the timelock is expired.  |
 ## Out of scope
 
 | Contracts |  
-| ----------- | ----------- | ----------- | ----------- |
+| ----------- |
 | [contracts/interfaces/*](contracts/interfaces)|
 | [contracts/libraries/*](contracts/libraries)|
 | [contracts/dynamic/*](contracts/dynamic)|
