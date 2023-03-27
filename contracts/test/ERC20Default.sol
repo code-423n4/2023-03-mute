@@ -76,4 +76,9 @@ contract ERC20Default {
         _transfer(from, to, value);
         return true;
     }
+
+    function claimFees() external pure returns (uint claimed0, uint claimed1) {
+        claimed0 = 0;
+        claimed1 = 0;
+    }
 }
