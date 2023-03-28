@@ -11,6 +11,15 @@
 - Starts March 28, 2023 20:00 UTC
 - Ends April 03, 2023 20:00 UTC
 
+# This is a Classified contest
+
+This contest repo and the contest's Discord channel are accessible to participating **certified wardens only.** Participation in Classified audits is bound by: 
+
+1. Code4rena's [Certified Contributor Terms and Conditions](https://github.com/code-423n4/code423n4.com/blob/main/_data/pages/certified-contributor-terms-and-conditions.md)
+2. C4's [Certified Contributor Code of Professional Conduct](https://code4rena.notion.site/Code-of-Professional-Conduct-657c7d80d34045f19eee510ae06fef55)
+
+*All discussions regarding Classified contests and audits should be considered private and confidential, unless otherwise indicated.*
+
 ## Automated Findings / Publicly Known Issues
 
 Automated findings output for the contest can be found [here](link to come) within an hour of contest opening.
