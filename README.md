@@ -22,7 +22,7 @@ This contest repo and the contest's Discord channel are accessible to participat
 
 ## Automated Findings / Publicly Known Issues
 
-Automated findings output for the contest can be found [here](link to come) within an hour of contest opening.
+Automated findings output for the contest can be found [here](https://gist.github.com/HollaDieWaldfee100/973baf0832f106788df06cd9b8a382f1) within an hour of contest opening.
 
 *Note for C4 wardens: Anything included in the automated findings output is considered a publicly known issue and is ineligible for awards.*
 
